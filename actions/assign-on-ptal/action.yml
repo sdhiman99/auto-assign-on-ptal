@@ -8,4 +8,4 @@ outputs:
     description: 'The member assigned to the thread'
 runs:
   using: 'node12'
-  main: 'dist2.js'
+  main: 'dist/index.js'
