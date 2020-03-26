@@ -17,7 +17,7 @@ jobs:
     runs-on:  ubuntu-latest
     steps:
       - name: Auto assign on PTAL
-        uses: sdhiman99/auto-assign-on-ptal@master
+        uses: sdhiman99/auto-assign-on-ptal@v1.0
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 ```
