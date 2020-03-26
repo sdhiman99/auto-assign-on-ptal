@@ -1,0 +1,13 @@
+name: Assign PR to creator
+on: [pull_request]
+
+jobs:
+  automation:
+    runs-on:  ubuntu-latest
+    
+    steps:
+      - name: Assign PR to Author
+        uses: samspills/assign-pr-to-author@v1.0
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+        

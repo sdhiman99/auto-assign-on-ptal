@@ -1,0 +1,11 @@
+name: Assign members based on comments
+on: [issue_comment]
+
+jobs:
+  assign:
+    runs-on:  ubuntu-latest
+    steps:
+      - name: Auto assign on PTAL
+        uses: sdhiman99/auto-assign-on-ptal@master
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
