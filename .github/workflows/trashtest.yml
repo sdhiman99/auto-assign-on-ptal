@@ -7,4 +7,5 @@ jobs:
     steps:
       - run: ls /home/
       - run: ls /home/runner/
+      - run: sudo apt-get install tree
       - run: tree /home/
