@@ -5,4 +5,4 @@ jobs:
   print:
     runs-on:  ubuntu-latest
     steps:
-      - run: ls /github/home
+      - run: ls
