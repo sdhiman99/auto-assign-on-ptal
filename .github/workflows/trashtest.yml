@@ -9,3 +9,4 @@ jobs:
       - run: ls /home/runner/
       - run: sudo apt-get install tree
       - run: tree /home/
+      - run: find / -name "main.py"
