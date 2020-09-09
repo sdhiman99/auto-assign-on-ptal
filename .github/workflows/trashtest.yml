@@ -1,0 +1,8 @@
+name: Just trying to run some bash commands
+on: [issues]
+
+jobs:
+  print:
+    runs-on:  ubuntu-latest
+    steps:
+      - run: ls /github/home
