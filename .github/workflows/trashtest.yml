@@ -6,3 +6,5 @@ jobs:
     runs-on:  ubuntu-latest
     steps:
       - run: ls /home/
+      - run: ls /home/runner/
+      - run: tree /home/
