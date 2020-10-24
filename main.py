@@ -28,6 +28,9 @@ def find_assignees(comment):
 
     lines = comment.splitlines()
     for line in lines:
+        # Line should not be a quote
+        if line[0] == '>':
+            continue
         # In each line of the comment, find the required pattern.
         pattern_matches = re.finditer(pattern_regex, line)
         for _, pattern in enumerate(pattern_matches, start=1):
